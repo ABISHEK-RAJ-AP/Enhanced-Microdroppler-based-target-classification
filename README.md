@@ -1,104 +1,68 @@
-# 🚀 AeroCheck-Enhanced Micro-Doppler Detection System
 
-### *Precision Redefined in Drone Detection*
 
+# 🚀 AeroCheck-Enhanced Micro-Doppler Detection System  
+**Precision Redefined in Drone Detection**
 ![](preview1.jpg)
 ![](preview2.jpg)
 ![](preview3.jpg)
+## 🛠️ Project Overview  
+AeroCheck is a cutting-edge solution designed to accurately classify drones from birds and clutter by analyzing micro-Doppler radar signatures. Utilizing Transformer-based deep learning models, this system delivers high-precision, real-time results for security and surveillance applications.
 
-## 🛠️ Project Overview
+## 🎯 Key Features  
+- **Transformer-Based Classification**: Employs Transformer models to analyze temporal patterns in micro-Doppler signatures for drone detection.
+- **Real-Time Detection**: Processes micro-Doppler data in real-time, ensuring minimal latency for immediate classification.
+- **High Accuracy**: Achieves over 95% accuracy in distinguishing drones from birds and clutter. 
+- **Scalable & Portable**: Designed for both urban and rural surveillance, with low power consumption.
 
-**AeroCheck** is a cutting-edge solution designed to accurately **classify drones** from birds and clutter by analyzing micro-Doppler radar signatures. Using a combination of **Transformer-based deep learning models** and **parametric harmonic analysis** (AIC/MDL), this system delivers real-time, high-precision results for **security and surveillance** applications.
+## 🔍 Introduction  
+As drones become increasingly common, they pose both opportunities and security risks. AeroCheck addresses these concerns by analyzing micro-Doppler radar signatures to differentiate between drones and other objects like birds, in real-time.
 
-## 🎯 Key Features
+This system integrates Transformer-based deep learning to identify unique temporal features in radar data, providing enhanced classification accuracy. The current prototype focuses solely on Transformer models to demonstrate the feasibility of real-time micro-Doppler signature analysis.
 
-- **Dual-Stage Classification**: Combines **Transformer models** for time-frequency pattern recognition with **parametric harmonic analysis** for unique feature extraction.
-- **Real-Time Detection**: Processes micro-Doppler data in real-time, minimizing latency for immediate action.
-- **High Accuracy**: Achieves over **95% accuracy** in distinguishing drones from birds, even in cluttered environments.
-- **Scalable & Portable**: Adaptable for both **urban** and **rural** surveillance zones with low power consumption.
+## 💡 Technologies Used  
+- **Python**: Core programming language for implementing algorithms and data handling.
+- **PyTorch**: Framework used for developing and training Transformer models.
+- **NumPy & SciPy**: For scientific computing and signal processing tasks.
+- **Matplotlib & Seaborn**: Libraries for visualizing radar data and classification results.
+- **Radar Signal Processing**: Custom algorithms for handling and processing micro-Doppler radar data.
 
+## 🏗️ System Architecture  
+Here’s the system flow for the Transformer-based AeroCheck prototype:
 
-## 🔍 Introduction
+| Radar Data | → | Preprocessing Stage | → | Transformer Model | → | Classification Results |  
 
-In today’s world, drones are increasingly used for both productive and malicious purposes. Security agencies, commercial facilities, and even private individuals face risks from unauthorized drone activity. **AeroCheck** solves this problem by employing **advanced radar-based micro-Doppler signature analysis** to differentiate drones from birds or other clutter in real-time.
+- **Radar Data Collection**: Captures micro-Doppler signatures from moving objects.  
+- **Preprocessing Stage**: Filters out noise and standardizes radar data for analysis.  
+- **Transformer Model**: Analyzes time-frequency patterns to identify key features for classification.  
+- **Classification Stage**: Outputs final classification results into categories (Drone, Bird, Clutter).
 
-The system integrates **Transformer-based deep learning** to identify temporal features while utilizing **parametric analysis** (AIC/MDL) to extract key harmonic components, resulting in enhanced classification precision.
+## 📖 Usage Guide  
+Once the project is installed, follow these steps to use the AeroCheck prototype:
 
-## 💡 Technologies Used
+- **Data Input**: Upload radar data into the `/data` directory for analysis.  
+- **Real-Time Analysis**: Use real-time radar input for live classification of micro-Doppler signatures.  
+- **Result Output**: The classification result (Drone, Bird, Clutter) will be displayed in the console or logged to a file.  
+- **Visualization**: Use the `visualize.py` script to generate plots of processed radar data and classification outcomes.
 
-- **Python**: Core programming language for algorithms and model development.
-- **PyTorch**: Framework used for developing Transformer models.
-- **Numpy & Scipy**: For scientific computing and signal processing.
-- **Matplotlib & Seaborn**: Used for data visualization and radar signature plots.
-- **Radar Signal Processing**: Custom algorithms for micro-Doppler data analysis.
+## 🌟 Unique Selling Proposition (USP)  
+AeroCheck leverages a Transformer-based approach for analyzing radar data, reducing false positives and enhancing precision in distinguishing between drones and other objects, especially in complex environments.
 
----
+## 📊 Statistical Impact & Feasibility  
+- **Accuracy**: Achieves over 95% classification accuracy in test environments.   
+- **Real-Time Processing**: Minimal latency for immediate detection and response.  
+- **Scalable**: Can be adapted for various surveillance environments (urban, rural).  
+- **Cost-Effective**: Low power consumption and modest hardware requirements.
 
-## 🏗️ System Architecture
+## 🤝 Contributing  
+We welcome contributions to AeroCheck! If you're interested in enhancing the system or fixing issues, follow these steps:  
 
-Here’s the system flow for **AeroCheck**:
+1. Fork the repository.  
+2. Create a new branch.  
+3. Make your changes.  
+4. Submit a pull request.  
 
-```
-| Radar Data |  →  | Preprocessing Stage |  →  | Transformer Model |  →  | Parametric Analysis (AIC/MDL) |  →  | Classification Results |
-```
+For significant changes, please open an issue to discuss the proposed modifications.
 
-- **Radar Data Collection**: Captures micro-Doppler signatures from moving objects.
-- **Preprocessing Stage**: Removes noise, filters signals, and prepares data for analysis.
-- **Transformer Model**: Analyzes time-frequency data to identify distinct patterns.
-- **Parametric Analysis**: Extracts harmonic components specific to drones using AIC/MDL methods.
-- **Classification Stage**: Final classification into target categories (e.g., Drone, Bird, Clutter).
+## 📜 License  
+This project is licensed under the MIT License – see the [LICENSE](LICENSE) file for details.
 
-
-4. **Load Micro-Doppler Signature Data**: Ensure that you have the radar data in the `/data` directory for the system to analyze.
-
-
-
-## 📖 Usage Guide
-
-Once the project is installed, here’s how you can use the AeroSync system:
-
-- **Data Input**: Upload radar data into the `/data` directory.
-- **Real-Time Analysis**: Run the system with real-time radar input for live classification.
-- **Result Output**: Classification results (Drone, Bird, Clutter) will be displayed in the console or can be logged into a file.
-- **Visualization**: Use the `visualize.py` script to plot the processed micro-Doppler signatures and classification results.
-
-
-
-## 🌟 Unique Selling Proposition (USP)
-
-Unlike traditional radar systems, AeroCheck uses a **dual-stage analysis** combining Transformer-based deep learning and parametric analysis. This significantly reduces false positives and enhances precision, particularly in cluttered environments, making it ideal for **military, industrial, and security applications**.
-
-
-
-## 📊 Statistical Impact & Feasibility
-
-- **Accuracy**: Over **95%** classification accuracy in complex environments.
-- **Real-Time Processing**: Minimal latency ensures immediate detection for proactive security.
-- **Scalable**: Adaptable for various environments (urban, rural, etc.).
-- **Cost-Effective**: Low power consumption, minimal hardware requirements.
-
-
-
-## 🤝 Contributing
-
-We welcome contributions to **AeroSync**! If you're interested in enhancing our project or fixing bugs, follow these steps:
-
-1. Fork the repository.
-2. Create a new branch.
-3. Make your changes.
-4. Submit a pull request.
-
-For major changes, please open an issue first to discuss what you would like to change.
-
-
-
-## 📜 License
-
-This project is licensed under the **MIT License** – see the [LICENSE](LICENSE) file for details.
-
-
-## 📧 Contact
-
-For any queries or suggestions, please reach out to our team:
-
-- **Abishek Raj A P (Project Leader)**: [apabishekraj@gmail.com](mailto:apabishekraj@gmail.com)
