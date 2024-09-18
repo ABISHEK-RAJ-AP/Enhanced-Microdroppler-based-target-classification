@@ -1,11 +1,11 @@
-# 🚀 AeroSync-Enhanced Micro-Doppler Detection System
+# 🚀 AeroCheck-Enhanced Micro-Doppler Detection System
 
 ### *Precision Redefined in Drone Detection*
 
 
 ## 🛠️ Project Overview
 
-**AeroSync** is a cutting-edge solution designed to accurately **classify drones** from birds and clutter by analyzing micro-Doppler radar signatures. Using a combination of **Transformer-based deep learning models** and **parametric harmonic analysis** (AIC/MDL), this system delivers real-time, high-precision results for **security and surveillance** applications.
+**AeroCheck** is a cutting-edge solution designed to accurately **classify drones** from birds and clutter by analyzing micro-Doppler radar signatures. Using a combination of **Transformer-based deep learning models** and **parametric harmonic analysis** (AIC/MDL), this system delivers real-time, high-precision results for **security and surveillance** applications.
 
 ## 🎯 Key Features
 
@@ -17,7 +17,7 @@
 
 ## 🔍 Introduction
 
-In today’s world, drones are increasingly used for both productive and malicious purposes. Security agencies, commercial facilities, and even private individuals face risks from unauthorized drone activity. **AeroSync** solves this problem by employing **advanced radar-based micro-Doppler signature analysis** to differentiate drones from birds or other clutter in real-time.
+In today’s world, drones are increasingly used for both productive and malicious purposes. Security agencies, commercial facilities, and even private individuals face risks from unauthorized drone activity. **AeroCheck** solves this problem by employing **advanced radar-based micro-Doppler signature analysis** to differentiate drones from birds or other clutter in real-time.
 
 The system integrates **Transformer-based deep learning** to identify temporal features while utilizing **parametric analysis** (AIC/MDL) to extract key harmonic components, resulting in enhanced classification precision.
 
@@ -33,7 +33,7 @@ The system integrates **Transformer-based deep learning** to identify temporal f
 
 ## 🏗️ System Architecture
 
-Here’s the system flow for **AeroSync**:
+Here’s the system flow for **AeroCheck**:
 
 ```
 | Radar Data |  →  | Preprocessing Stage |  →  | Transformer Model |  →  | Parametric Analysis (AIC/MDL) |  →  | Classification Results |
@@ -63,7 +63,7 @@ Once the project is installed, here’s how you can use the AeroSync system:
 
 ## 🌟 Unique Selling Proposition (USP)
 
-Unlike traditional radar systems, AeroSync uses a **dual-stage analysis** combining Transformer-based deep learning and parametric analysis. This significantly reduces false positives and enhances precision, particularly in cluttered environments, making it ideal for **military, industrial, and security applications**.
+Unlike traditional radar systems, AeroCheck uses a **dual-stage analysis** combining Transformer-based deep learning and parametric analysis. This significantly reduces false positives and enhances precision, particularly in cluttered environments, making it ideal for **military, industrial, and security applications**.
 
 
 
