@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instructions</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <img src="{{ url_for('static', filename='images/logo.png') }}" alt="AeroSync Logo" style="height: 40px;">
+            <nav>
+                <a href="{{ url_for('home') }}">Home</a>
+                <a href="{{ url_for('upload') }}">Upload Data / Real-Time Monitoring</a>
+                <a href="{{ url_for('results') }}">Results / Logs</a>
+                <a href="{{ url_for('instructions') }}">Instructions</a>
+                <a href="{{ url_for('settings') }}">Settings</a>
+                <a href="{{ url_for('profile') }}">Profile</a>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <h1>Instructions</h1>
+        <h2>Post-Detection Guidelines</h2>
+        <h3>Drone Detected</h3>
+        <p>Immediate action: Alert security personnel.</p>
+        <p>Guidelines for further investigation: Check if the drone poses any threat based on proximity and speed.</p>
+        <p>Escalation options: Set a protocol for capturing further data on the drone's path or take necessary actions (e.g., alert authorities).</p>
+        <h3>Bird Detected</h3>
+        <p>No immediate action needed: System will log the detection, and no further steps are required unless unusual flight patterns are observed.</p>
+        <

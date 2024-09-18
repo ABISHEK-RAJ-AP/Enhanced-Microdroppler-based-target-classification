@@ -1,0 +1,54 @@
+/* Dark theme styles */
+body {
+    background-color: #121212;
+    color: #e0e0e0;
+    font-family: Arial, sans-serif;
+}
+
+header, footer {
+    background-color: #1f1f1f;
+    padding: 10px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar a {
+    color: #e0e0e0;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+button {
+    background-color: #333;
+    color: #e0e0e0;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #444;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table th, .table td {
+    border: 1px solid #333;
+    padding: 8px;
+}
+
+.table th {
+    background-color: #1f1f1f;
+}
+
+input[type="file"] {
+    display: block;
+    margin: 20px 0;
+}
